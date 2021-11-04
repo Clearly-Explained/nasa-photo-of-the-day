@@ -8,10 +8,11 @@ const [nasaInfo, setNasaInfo] = useState([]);
 
 useEffect(() => {
 axios
-.get(`https://api.nasa.gov/planetary/apod?api_key=rDLuS1OxbD26VJPygpmoRhTKPA0l6bb4sIHGGQJi&date=2020-04-20`)
+.get(`https://api.nasa.gov/planetary/apod?api_key=QByWJ6afgWZCdKjOQOtC8QM5nEleB5SG3gdupwej&date=2020-04-20`)
 .then(res => {
     console.log("Res data : ", res);
     setNasaInfo(res.data);
+
 })
 
 .catch(err => {
